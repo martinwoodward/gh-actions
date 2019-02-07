@@ -1,6 +1,8 @@
 #!/bin/sh
 
 set -e
-
+echo -e "\n-----------------\nEnvironment Variables:"
 env
-cat $GITHUB_EVENT_PATH
+
+echo -e "\n-----------------\nGitHub Event JSON:"
+jq . "$GITHUB_EVENT_PATH"
