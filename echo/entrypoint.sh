@@ -1,5 +1,6 @@
 #!/bin/sh
 
 set -e
-echo "Hello World."
 
+env
+cat $GITHUB_EVENT_PATH
