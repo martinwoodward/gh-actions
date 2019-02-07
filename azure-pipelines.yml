@@ -12,3 +12,4 @@ steps:
     for SCRIPT in $(find . -type f -name \*\.sh | xargs); do
       docker run --rm -v '$(Build.SourcesDirectory):/mnt' -t koalaman/shellcheck $SCRIPT
     done
+  displayName: shellcheck
