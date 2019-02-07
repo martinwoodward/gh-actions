@@ -4,13 +4,10 @@ Simple action to dump the contents of the environment variables and JSON payload
 
 ## Usage
 
-```
-
- action "Azure CLI" {
+```HCL
+action "echo" {
   uses = "martinwoodward/gh-actions/echo@master"
-  env = {
-  }
+  env = {}
 }
-
 ```
 
